@@ -1,0 +1,335 @@
+
+body{
+background-color: rgb(11, 4, 55);
+    color:white;
+}
+ /* REMOVING MARGIN FROM EVERY TEXT */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+     margin: 0px;
+ }
+/* NAVIGATION SECTION */
+.navigation-bar{
+    height: auto;
+	width: auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	
+
+}
+/* all the divs inside the navigation bar should be placed side by side*/
+.navigation-bar > div {
+    /* vertical-align: middle; */
+	display: inline-block;
+   
+}
+/* website title and general description */
+.title-bar > div{
+    display: inline-block;
+    vertical-align: middle;
+  
+}
+/* animation for the website logo */
+@keyframes rotating{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+
+        transform:rotate(360deg);
+    }
+}
+/* website logo image */
+.webSite-logo img{
+height:50px;
+width:50px;
+border-radius: 100%;
+animation-name: rotating;
+animation-timing-function: ease-in-out;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+/* WEBSITE FUNCTION */
+
+/* ANIMATION FOR FAVOURITE TEXT */
+@keyframes flexible {
+	
+	75% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+/*FAVOURITE TEXT  */
+.fav {
+  
+	animation-name: flexible;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	perspective: 10000px;
+	transform-style: preserve-3d;
+	animation-iteration-count: infinite;
+}
+/* SEARCH BAR */
+.search-bar {
+	width: 20%;
+	position: relative;
+}
+/* SEARCH BAR INPUT */
+.search-bar input{
+    width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+}
+.search-ico{
+    color:rgb(152, 84, 84);
+}
+.mic-ico{
+    color:grey;
+}
+
+
+.search-bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 18%;
+}
+.search-bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 5%;
+	top: 18%;
+	
+}
+/* NOTIFICATION BAR */
+/* ANIMATION FOR NOTIFICATION BAR */
+.notification-bar{
+   
+animation-name: vibrating;
+animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+/* profile picture of the user */
+.profile-pic img {
+	width: 55px;
+	height: 55px;
+	border-radius: 100%;
+}
+
+/* END OF NAVIGATION BAR */
+
+/* STARTING OF THE MAIN PART */
+/* DIV OF MAIN MIDDLE BLOCK */
+main{
+	height:300px;
+	width:vw;
+	/* border: 2px solid black; */
+	margin-top:10px;
+	
+	margin-left: 140px;
+	display: flex;
+	/* box-shadow: 0px 5px rgb(10, 42, 202); */
+}
+
+.coldplay-img img{
+	/* border: 2px solid red; */
+	height:270px;
+	width:350px;
+	/* display:inline-block; */
+	
+}
+.coldplay-text{
+	/* border: 2px solid yellow; */
+	height:270px;
+	width:350px;
+	background-color: rgb(29, 8, 123);
+	/* display:inline-block; */
+}
+.coldplay-text p{
+	margin:10px;
+	color:aqua;
+}
+
+.button-playAll{
+	
+	
+	background-image: linear-gradient(to right,rgb(47, 0, 255), rgb(193, 20, 127));
+	margin:10px;
+	margin-left:80px;
+}
+/* ASIDE SECTION */
+aside{
+	margin:20px;
+
+}
+.aside-section{
+	display:flex;
+	
+}
+aside h1{
+	margin-left:50px;
+	/* margin-left:30px; */
+	display:flex;
+ vertical-align: middle;
+}
+.music-file img{
+	width:50px;
+	height:50px;
+	margin:10px;
+	margin-left: 30px;
+	vertical-align: middle;
+}
+.view-all h4{
+	
+	margin-top: 5px;
+	margin-left: 100px;
+}
+.music-time{
+	margin-left:110px;
+}
+.music-time h1{
+	/* margin-left: 110px; */
+margin:7px;
+margin-top: 15px;
+
+}
+
+/* COMPLETED OF MAIN PARTS AND ALSO ASIDE SECTION  */
+
+.footer-section{
+/* margin-top:5px; */
+display:flex;
+display:inline-block;
+}
+.music-list-function {
+/* margin-top:0px; */
+margin-left: 140px;
+display:flex;
+flex-direction: row;
+display:inline-block;
+vertical-align: middle;
+}
+.music-list{
+	width:700px;
+	height:35px;
+	margin:2px;
+	border:1px solid black;
+	background-color: rgb(68, 9, 123);
+	
+}
+.music-list img{
+	width:25px;
+	height:25px;
+	margin:5px;
+	vertical-align: middle;
+}
+.footer-block{
+	display:flex;
+}
+#aside-footer{
+	margin-top:0px;
+}
+/* shift of timer of song towards right */
+.time-song{
+	margin-left:20%;
+}
+/* heart and plus sign shift towrda right */
+.heartadd-shift{
+margin-left:40%;
+}
+/* <!-- FOOTER PLAYING SECTIONs --> */
+.playing-function{
+	margin-left:0px;
+	position:fixed;
+	bottom:0%;
+	width:100%;
+	height:45px;
+	display:flex;
+	/* display:Sblock; */
+	background-color:darkolivegreen;
+	/* border:2px solid white; */
+	/* display:block; */
+	
+}
+#playing-fn{
+	margin-left:0px;
+}
+.playing-function  img{
+	width:60px;
+	height:35px;
+	margin:7px;
+	vertical-align: middle;
+    margin-left: 80px;
+}
+.fa-backward-step{
+	margin-left: 18%;
+	margin-right: -20%;
+	margin-top: 0%;
+	margin-bottom: 1.5%;
+	font-size: 20px;
+}
+.fa-circle-pause{
+	margin-left: 30%;
+	margin-right: -20%;
+	margin-top: 0%;
+	margin-bottom: 1.5%;
+	font-size: 20px;
+}
+.fa-forward-step{
+	margin-left: 30%;
+	margin-right: -32%;
+	margin-top: 0%;
+	margin-bottom: 1.5%;
+	font-size: 20px;
+}
+.timer input{
+	width:500px;
+	margin-left: 5px;
+	/* color:rgb(22, 216, 77); */
+	/* color:-internal-light-green(rgb(12, 169, 46), rgb(255, 255, 255)); */
+	margin-top:1.5%;
+
+	/* margin-right: 10%; */
+}
+
+.volume input{
+	/* margin-left: 15%; */
+	width:60px;
+}
+.fa-volume-high{
+	margin-left: 6%;
+}
+.fa-up-right-and-down-left-from-center{
+	margin-left:2%;
+}
+/* #music-logo{
+	margin-top:0px;
+	margin-bottom: 5%;
+} */
+@media (max-width:600px) {
+	body{
+		display: flex;
+	}
+
+}
